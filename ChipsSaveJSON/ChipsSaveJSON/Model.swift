@@ -1,28 +1,6 @@
 
 import SwiftUI
 
-struct ItemModel: Identifiable, Hashable, Encodable, Decodable {
-    var label: String = "red"
-    var x: Int = 100
-    var y: Int = 100
-    var width: Int = 50
-    var height: Int = 50
-    var colorNum: Int = 0xFFFF0000
-    var rotation: Double = 0.0
-    var selected: Bool = false
-    var id: Int = 0
-    var assetName: String = ""
-    
-    var colorName: String {
-        String(format: "#%x", colorNum)
-    }
-    
-    var color: Color {
-        // !!@ Can't use color as func name due to var color property name
-        color_(colorNum: colorNum)
-    }
-}
-
 struct Model: Encodable, Decodable {
     var items: [ItemModel]
     var uniqueId = 0
@@ -50,6 +28,28 @@ struct Model: Encodable, Decodable {
     
     func item(id: Int) -> ItemModel? {
         items.first { $0.id == id }
+    }
+}
+
+struct ItemModel: Identifiable, Hashable, Encodable, Decodable {
+    var label: String = "red"
+    var x: Int = 100
+    var y: Int = 100
+    var width: Int = 50
+    var height: Int = 50
+    var colorNum: Int = 0xFFFF0000
+    var rotation: Double = 0.0
+    var selected: Bool = false
+    var id: Int = 0
+    var assetName: String = ""
+    
+    var colorName: String {
+        String(format: "#%x", colorNum)
+    }
+    
+    var color: Color {
+        // !!@ Can't use color as func name due to var color property name
+        color_(colorNum: colorNum)
     }
 }
 

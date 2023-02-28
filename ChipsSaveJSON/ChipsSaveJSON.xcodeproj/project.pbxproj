@@ -29,6 +29,7 @@
 		AB53432029AC37A80071FEB3 /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		AB53432129AC37A80071FEB3 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AB53432229AC37A80071FEB3 /* ModelJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelJSON.swift; sourceTree = "<group>"; };
+		AB8272F429AE651A00D55AEB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +46,7 @@
 		AB53430429AC37650071FEB3 = {
 			isa = PBXGroup;
 			children = (
+				AB8272F429AE651A00D55AEB /* README.md */,
 				AB53430F29AC37650071FEB3 /* ChipsSaveJSON */,
 				AB53430E29AC37650071FEB3 /* Products */,
 			);
@@ -63,11 +65,11 @@
 			children = (
 				AB53431029AC37650071FEB3 /* ChipsSaveJSONApp.swift */,
 				AB53431229AC37650071FEB3 /* ContentView.swift */,
-				AB53432029AC37A80071FEB3 /* Document.swift */,
-				AB53431F29AC37A80071FEB3 /* FormatString.swift */,
 				AB53431E29AC37A80071FEB3 /* ItemView.swift */,
+				AB53432029AC37A80071FEB3 /* Document.swift */,
 				AB53432129AC37A80071FEB3 /* Model.swift */,
 				AB53432229AC37A80071FEB3 /* ModelJSON.swift */,
+				AB53431F29AC37A80071FEB3 /* FormatString.swift */,
 				AB53431429AC37650071FEB3 /* Assets.xcassets */,
 				AB53431629AC37650071FEB3 /* Preview Content */,
 			);
