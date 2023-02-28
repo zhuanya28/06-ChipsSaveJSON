@@ -90,7 +90,7 @@ struct ContentView: View {
                             Text("rgb").tag(Palette.rgb)
                             Text("fixed").tag(Palette.fixed)
                         }
-                        Button("To Back") {
+                        Button("Move-Back") {
                             withAnimation {
                                 document.sendToBack();
                             }

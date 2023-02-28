@@ -4,12 +4,6 @@
 
 import SwiftUI
 
-enum Palette: String, CaseIterable, Identifiable {
-    case fixed
-    case rgb
-    var id: String { self.rawValue }
-}
-
 class Document: ObservableObject
 {
     @Published var model: Model
@@ -250,3 +244,8 @@ class Document: ObservableObject
     }
 }
 
+enum Palette: String, CaseIterable, Identifiable {
+    case fixed
+    case rgb
+    var id: String { self.rawValue }
+}
