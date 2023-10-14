@@ -31,7 +31,7 @@ struct Model: Codable {
     }
 }
 
-struct ItemModel: Identifiable, Hashable, Codable {
+struct ItemModel: Identifiable, Codable {
     var label: String = "red"
     var x: Int = 100
     var y: Int = 100
