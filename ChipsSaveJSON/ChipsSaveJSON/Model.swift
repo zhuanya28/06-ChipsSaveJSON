@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct Model: Encodable, Decodable {
+struct Model: Codable {
     var items: [ItemModel]
     var uniqueId = 0
     
@@ -31,7 +31,7 @@ struct Model: Encodable, Decodable {
     }
 }
 
-struct ItemModel: Identifiable, Hashable, Encodable, Decodable {
+struct ItemModel: Identifiable, Hashable, Codable {
     var label: String = "red"
     var x: Int = 100
     var y: Int = 100
